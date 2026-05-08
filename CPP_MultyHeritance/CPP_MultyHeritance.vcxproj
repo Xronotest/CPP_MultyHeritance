@@ -127,12 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Generator.cpp" />
+    <ClCompile Include="FormCompar.hpp" />
+    <ClCompile Include="FullCompar.hpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Panel.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneCreator.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Comparator.hpp" />
+    <ClInclude Include="Comparison.hpp" />
+    <ClInclude Include="Features.hpp" />
     <ClInclude Include="Form.hpp" />
     <ClInclude Include="Frame.hpp" />
+    <ClInclude Include="FtrCompar.hpp" />
+    <ClInclude Include="Player.hpp" />
+    <ClInclude Include="Panel.hpp" />
+    <ClInclude Include="Scene.hpp" />
+    <ClInclude Include="SceneCreator.hpp" />
     <ClInclude Include="Toys.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

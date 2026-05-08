@@ -1,7 +1,12 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime> 
+#include <windows.h>
+#include <clocale>
 
-#include "Frame.hpp"
+#include "Player.hpp"
+#include "SceneCreator.hpp"
 
 //class UltimateBase
 //{
@@ -61,29 +66,16 @@
 /*FooBar obj;
 	obj.Say();*/
 
+int Features::count_ = 0;
 
 int main()
 {
-	setlocale(LC_ALL, "RUS");
-	Form squareForm(Form::Shapes::square);
-	Form triangleForm(Form::Shapes::triangle);
-	Form circleForm(Form::Shapes::circle);
-	Form starForm(Form::Shapes::star);
+	//SetConsoleOutputCP(1251);
+	//SetConsoleCP(2151);
+	setlocale(LC_ALL, "ru_RU.UTF-8");
+	srand(time(nullptr));
 
-	Toys cubik(squareForm);
-	Toys cube(squareForm);
-	Toys circle(circleForm);
-	Toys star(starForm);
-
-	Frames squar(squareForm);
-	Frames str(starForm);
-
-	std::cout << cubik.IsSame(cube) << "\n";
-	std::cout << cubik.IsSame(cube) << "\n";
-	std::cout << cubik.IsSame(star) << "\n";
-	std::cout << str.IsFit(star) << "\n";
-	std::cout << str.IsFit(cube) << "\n";
-	
+	SceneCreator::Start();
 
 	return 0;
 }
