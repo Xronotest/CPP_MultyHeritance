@@ -65,13 +65,13 @@ void Scene::Start()
 	{
 		std::cout << "Какое (номер): ";
 		std::cin >> _shoise;
-		_points += player.UseToy(panel.GetFrame(_shoise - 1));
+		_points += player.UseToy(panel.GetFrame(_shoise - 1), _dif);
 	}
 	else if (_shoise == 9)
 	{
 		std::cout << "Какое (номер): ";
 		std::cin >> _shoise;
-		_points += player.UseSecondToy(panel.GetFrame(_shoise - 1));
+		_points += player.UseSecondToy(panel.GetFrame(_shoise - 1), _dif);
 	}
 	else if (_shoise == 0)
 	{

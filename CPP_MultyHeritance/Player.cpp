@@ -55,7 +55,7 @@ void Player::ClearPlayer()
 	_hand = -1;
 }
 
-int Player::UseToy(Frame * frame)
+int Player::UseToy(Frame * frame, int dif)
 {
 	if (_hand < _toysCount && _hand >= 0 && _gamer[_hand] != nullptr && frame != nullptr)
 	{
@@ -77,7 +77,7 @@ int Player::UseToy(Frame * frame)
 			_toysCount--;
 			_gamer[_toysCount] = nullptr;
 			_hand = -1;
-			return 100;
+			return 100 * dif;
 		}
 		else
 		{
@@ -93,7 +93,7 @@ int Player::UseToy(Frame * frame)
 	}
 }
 
-int Player::UseSecondToy(Frame* frame)
+int Player::UseSecondToy(Frame* frame, int dif)
 {
 	if (_secondHand != nullptr && frame != nullptr)
 	{
@@ -106,7 +106,7 @@ int Player::UseSecondToy(Frame* frame)
 			_secondHand->CleareFtr();
 			delete _secondHand;
 			_secondHand = nullptr;
-			return 100;
+			return 100 * dif;
 		}
 		else
 		{

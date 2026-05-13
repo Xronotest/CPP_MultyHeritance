@@ -18,8 +18,8 @@ public:
     Toys** GeneratePlayer();
     void ClearPlayer();
 
-    int UseToy(Frame* frame);
-    int UseSecondToy(Frame* frame);
+    int UseToy(Frame* frame, int dif);
+    int UseSecondToy(Frame* frame, int dif);
 
     void SeeToys();
     void InspectToy();

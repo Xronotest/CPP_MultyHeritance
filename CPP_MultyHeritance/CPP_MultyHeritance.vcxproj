@@ -148,6 +148,9 @@
     <ClInclude Include="SceneCreator.hpp" />
     <ClInclude Include="Toys.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Requirements.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
