@@ -4,4 +4,5 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="CPP_MultyHeritance/CPP_MultyHeritance.vcxproj" Id="ba47a9f3-34ff-496f-91c8-dcd1b0c66582" />
+  <Project Path="Testing/Testing.vcxproj" />
 </Solution>
